@@ -14,12 +14,13 @@
     <div id="unityContainer" style="width: 480px; height: 800px; margin: auto"></div>
 	<script>
 		function resizeme(){
-		var h = window.innerHeight;
-		var w = window.innerHeight * 0.6;
+		var h = window.innerHeight * 0.95;
+		var w = h * 0.6;
 		document.body.style.height = window.innerHeight;
 		var div = document.getElementById("unityContainer");
 		div.style.height = h + "px";
 		div.style.width = w + "px";
+		div.style.left = (window.innerWidth/2) - (w/2) + "px"; 
 		}
 	</script>
   </body>
